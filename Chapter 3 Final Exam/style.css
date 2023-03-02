@@ -28,11 +28,33 @@
   height: 100%;
   line-height: 60px;
   padding: 0 16px;
+  cursor: pointer;
 }
 .nav-wrapper a:hover {
-  background-color: burlywood;
+  background-color: blanchedalmond;
 }
-
+.nav-wrapper > li {
+  list-style: none;
+}
+.nav-wrapper > li:hover .dropdown {
+  display: block;
+  position: fixed;
+}
+.nav-wrapper > li > .dropdown {
+  color: navy;
+  display: none;
+  position: fixed;
+  list-style: none;
+  width: 100px;
+  background-color: beige;
+}
+.dropdown > li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.dropdown > li:hover {
+  background-color: blanchedalmond;
+}
 .logo {
   display: flex;
   align-items: center;
