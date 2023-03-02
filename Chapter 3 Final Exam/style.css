@@ -22,12 +22,13 @@
 }
 .nav-wrapper a {
   display: block;
-  /* padding: 8px 16px; */
+  width: 100px;
+  text-align: center;
   text-decoration: none;
   color: navy;
   height: 100%;
   line-height: 60px;
-  padding: 0 16px;
+  padding: 0 auto;
   cursor: pointer;
 }
 .nav-wrapper a:hover {
@@ -35,6 +36,7 @@
 }
 .nav-wrapper > li {
   list-style: none;
+  width: 100px;
 }
 .nav-wrapper > li:hover .dropdown {
   display: block;
@@ -45,7 +47,8 @@
   display: none;
   position: fixed;
   list-style: none;
-  width: 100px;
+  z-index: 1;
+  width: inherit;
   background-color: beige;
 }
 .dropdown > li {
